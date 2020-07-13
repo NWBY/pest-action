@@ -6,5 +6,6 @@ LABEL homepage="https://github.com/NWBY/pest-action"
 LABEL maintainer="Sam Newby <sam@nwby.io>"
 
 RUN composer global require --no-progress phpunit/phpunit 9.*
-COPY entrypoint /usr/local/bin/entrypoint
-ENTRYPOINT ["/usr/local/bin/entrypoint"]
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
