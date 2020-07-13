@@ -1,4 +1,4 @@
-name: "Pest"
+name: "PestPHP"
 description: "Run your Pest tests in your Github Actions."
 author: "Sam Newby"
 
