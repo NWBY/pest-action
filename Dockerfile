@@ -1,6 +1,6 @@
-FROM composer:1.10.8
+FROM composer:2.0.9
 
-LABEL version="1.0.0"
+LABEL version="2.0.0"
 LABEL repository="https://github.com/NWBY/pest-action"
 LABEL homepage="https://github.com/NWBY/pest-action"
 LABEL maintainer="Sam Newby <sam@nwby.io>"
