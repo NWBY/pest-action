@@ -5,18 +5,14 @@ Create your Github Workflow configuration in .github/workflows/ci.yml or similar
 ```
 name: CI
 
-on:
-  push:
-    branches:
-      - master
-      - develop
+on: ['push']
 
 jobs:
-build-test:
-runs-on: ubuntu-latest
+  build-test:
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - uses: php-actions/composer@v1
-    - uses: NWBY/pest-action@v1.1.1
+    - uses: actions/checkout@v2.3.4
+    - uses: php-actions/composer@v5
+    - uses: NWBY/pest-action@v1.2.0
 ```
